@@ -30,17 +30,16 @@ namespace Library
         {
             string sql = "select bid 书号, bname 书名 ,bpress 出版社, author 作者,bnum-bhbnum 可借 from booktable where bborrow=1 ";        
             // 如果没有填写，默认查询所有的书本
-            string temp = null;
+            string temp = "";
             foreach(var t in this.Controls)
             {
-                if(t is TextBox)
+                if(t is TextBox && !string.IsNullOrEmpty((t as TextBox).Text.Trim()))
                 {
-                    temp = "and "+(t as TextBox).Name.ToString()+" = '"+
-                           (t as TextBox).Text.Trim()+"' ";
+                    temp += "and "+(t as TextBox).Name.ToString()+" like '%"+
+                           (t as TextBox).Text.Trim()+"%' ";
                 }
             }
-           datalist.DataSource = OprSql.Queue(sql + temp, "searchtable").Tables["searchtable"]; 
-          
+            datalist.DataSource = OprSql.Queue(sql+temp, "searchtable").Tables["searchtable"]; 
         }
     }
 }

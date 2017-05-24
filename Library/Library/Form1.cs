@@ -64,6 +64,12 @@ namespace Library
                 }
             }
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+        
     }
 
     // 同一调用此类和数据库进行交互
