@@ -15,5 +15,10 @@ namespace Library
         {
             InitializeComponent();
         }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

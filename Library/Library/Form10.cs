@@ -15,5 +15,16 @@ namespace Library
         {
             InitializeComponent();
         }
+
+
+        private void Form10_FormClosed(object sender, EventArgs e)
+        {
+            Form9.form.Show();
+        }
+
+        private void Form10_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

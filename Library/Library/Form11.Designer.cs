@@ -61,6 +61,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form11";
             this.Text = "我的借阅记录";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form11_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

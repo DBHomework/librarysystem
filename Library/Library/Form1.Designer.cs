@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.loginname = new System.Windows.Forms.TextBox();
+            this.psw = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -66,26 +66,26 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "密码：";
             // 
-            // textBox1
+            // loginname
             // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(165, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 26);
-            this.textBox1.TabIndex = 3;
+            this.loginname.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.loginname.Location = new System.Drawing.Point(165, 133);
+            this.loginname.Name = "loginname";
+            this.loginname.Size = new System.Drawing.Size(157, 26);
+            this.loginname.TabIndex = 3;
             // 
-            // textBox2
+            // psw
             // 
-            this.textBox2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.Location = new System.Drawing.Point(165, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(157, 26);
-            this.textBox2.TabIndex = 4;
+            this.psw.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.psw.Location = new System.Drawing.Point(165, 186);
+            this.psw.Name = "psw";
+            this.psw.Size = new System.Drawing.Size(157, 26);
+            this.psw.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(199, 260);
+            this.button1.Location = new System.Drawing.Point(186, 255);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 39);
             this.button1.TabIndex = 5;
@@ -97,10 +97,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 319);
+            this.ClientSize = new System.Drawing.Size(470, 319);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.psw);
+            this.Controls.Add(this.loginname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -116,8 +116,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox loginname;
+        private System.Windows.Forms.TextBox psw;
         private System.Windows.Forms.Button button1;
     }
 }

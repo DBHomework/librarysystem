@@ -24,7 +24,6 @@ namespace Library
         private void button1_Click(object sender, EventArgs e)
         {
             Form7 subForm = new Form7();
-            subForm.Owner = this;
             subForm.Show();
 
         }
@@ -32,9 +31,12 @@ namespace Library
         private void button3_Click(object sender, EventArgs e)
         {
             Form8 subForm = new Form8();
-            subForm.Owner = this;
             subForm.Show();
+        }
 
+        private void Form6_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form2.form.Show();
         }
     }
 }

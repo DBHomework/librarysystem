@@ -34,7 +34,11 @@ namespace Library
             Form5 subForm = new Form5();
             subForm.Owner = this;
             subForm.Show();
+        }
 
+        private void Form3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Form2.form.Show();
         }
     }
 }

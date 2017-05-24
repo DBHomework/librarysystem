@@ -11,25 +11,33 @@ namespace Library
 {
     public partial class Form2 : Form
     {
+        public static Form2 form = null;
         public Form2()
         {
+            form = this;
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form3 subForm = new Form3();
-            subForm.Owner = this;
             subForm.Show();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form6 subForm = new Form6();
-            subForm.Owner = this;
             subForm.Show();
 
         }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+        
+       
     }
 }

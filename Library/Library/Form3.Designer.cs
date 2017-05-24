@@ -180,6 +180,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form3";
             this.Text = "图书信息";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form3_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
