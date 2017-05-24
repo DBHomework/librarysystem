@@ -29,7 +29,7 @@ namespace Library
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form11 subForm = new Form11();
+            Form11 subForm = new Form11(rid);
             this.Hide();
             subForm.Show();
 

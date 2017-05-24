@@ -58,7 +58,7 @@ namespace Library
                 }
                 else
                 {
-                    Form9 readerForm = new Form9(dr["rid"].ToString());
+                    Form9 readerForm = new Form9(dr["rid"].ToString().Trim());
                     this.Hide();
                     readerForm.Show();
                 }

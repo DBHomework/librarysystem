@@ -32,14 +32,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.bookid = new System.Windows.Forms.TextBox();
+            this.bname = new System.Windows.Forms.TextBox();
+            this.author = new System.Windows.Forms.TextBox();
+            this.press = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.datalist = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalist)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -82,33 +82,33 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "出版社：";
             // 
-            // textBox1
+            // bookid
             // 
-            this.textBox1.Location = new System.Drawing.Point(114, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(119, 21);
-            this.textBox1.TabIndex = 10;
+            this.bookid.Location = new System.Drawing.Point(114, 46);
+            this.bookid.Name = "bookid";
+            this.bookid.Size = new System.Drawing.Size(119, 21);
+            this.bookid.TabIndex = 10;
             // 
-            // textBox2
+            // bname
             // 
-            this.textBox2.Location = new System.Drawing.Point(114, 92);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 21);
-            this.textBox2.TabIndex = 11;
+            this.bname.Location = new System.Drawing.Point(114, 92);
+            this.bname.Name = "bname";
+            this.bname.Size = new System.Drawing.Size(119, 21);
+            this.bname.TabIndex = 11;
             // 
-            // textBox3
+            // author
             // 
-            this.textBox3.Location = new System.Drawing.Point(307, 45);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(119, 21);
-            this.textBox3.TabIndex = 12;
+            this.author.Location = new System.Drawing.Point(307, 45);
+            this.author.Name = "author";
+            this.author.Size = new System.Drawing.Size(119, 21);
+            this.author.TabIndex = 12;
             // 
-            // textBox4
+            // press
             // 
-            this.textBox4.Location = new System.Drawing.Point(307, 92);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(119, 21);
-            this.textBox4.TabIndex = 13;
+            this.press.Location = new System.Drawing.Point(307, 92);
+            this.press.Name = "press";
+            this.press.Size = new System.Drawing.Size(119, 21);
+            this.press.TabIndex = 13;
             // 
             // button4
             // 
@@ -118,15 +118,16 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "查询";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dataGridView1
+            // datalist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(69, 136);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(455, 189);
-            this.dataGridView1.TabIndex = 15;
+            this.datalist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datalist.Location = new System.Drawing.Point(69, 136);
+            this.datalist.Name = "datalist";
+            this.datalist.RowTemplate.Height = 23;
+            this.datalist.Size = new System.Drawing.Size(455, 189);
+            this.datalist.TabIndex = 15;
             // 
             // button1
             // 
@@ -143,12 +144,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(587, 356);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datalist);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.press);
+            this.Controls.Add(this.author);
+            this.Controls.Add(this.bname);
+            this.Controls.Add(this.bookid);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -157,7 +158,7 @@
             this.Text = "图书信息查询";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form10_FormClosed);
             this.Load += new System.EventHandler(this.Form10_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datalist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +170,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox bookid;
+        private System.Windows.Forms.TextBox bname;
+        private System.Windows.Forms.TextBox author;
+        private System.Windows.Forms.TextBox press;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView datalist;
         private System.Windows.Forms.Button button1;
     }
 }

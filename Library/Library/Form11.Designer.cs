@@ -29,40 +29,41 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.bfdatalist = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.bfdatalist)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(177, 59);
+            this.label1.Location = new System.Drawing.Point(258, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "我的借阅记录";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dataGridView1
+            // bfdatalist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 102);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(445, 206);
-            this.dataGridView1.TabIndex = 1;
+            this.bfdatalist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bfdatalist.Location = new System.Drawing.Point(38, 93);
+            this.bfdatalist.Name = "bfdatalist";
+            this.bfdatalist.RowTemplate.Height = 23;
+            this.bfdatalist.Size = new System.Drawing.Size(616, 283);
+            this.bfdatalist.TabIndex = 1;
             // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 347);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(684, 397);
+            this.Controls.Add(this.bfdatalist);
             this.Controls.Add(this.label1);
             this.Name = "Form11";
             this.Text = "我的借阅记录";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form11_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bfdatalist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,6 +72,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView bfdatalist;
     }
 }
