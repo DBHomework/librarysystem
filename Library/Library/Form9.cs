@@ -22,8 +22,6 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            //OprSql.ExecuteSql("select * from logintable");
             Form10 subForm = new Form10();
             this.Hide();
             subForm.Show();

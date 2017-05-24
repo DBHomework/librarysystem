@@ -155,6 +155,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form10";
             this.Text = "图书信息查询";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form10_FormClosed);
             this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -81,6 +81,7 @@
             this.psw.Name = "psw";
             this.psw.Size = new System.Drawing.Size(157, 26);
             this.psw.TabIndex = 4;
+            this.psw.UseSystemPasswordChar = true;
             // 
             // button1
             // 

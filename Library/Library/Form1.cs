@@ -53,7 +53,6 @@ namespace Library
                 { //如果是1进入管理员 2进入读者
                     Form2 subForm = new Form2();
                     this.Hide();
-                    subForm.Owner = this;
                     subForm.Show();
                     
                 }
@@ -61,7 +60,6 @@ namespace Library
                 {
                     Form9 readerForm = new Form9(dr["rid"].ToString());
                     this.Hide();
-                    readerForm.Owner = this;
                     readerForm.Show();
                 }
             }
