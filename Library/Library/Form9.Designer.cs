@@ -39,7 +39,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 54);
             this.button1.TabIndex = 0;
-            this.button1.Text = "图书信息查询";
+            this.button1.Text = "图书信息";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -58,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 324);
+            this.ClientSize = new System.Drawing.Size(226, 324);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form9";

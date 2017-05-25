@@ -15,3 +15,22 @@ d:\documents\visual studio 2010\Projects\Library\Library\obj\x86\Debug\Library.P
 d:\documents\visual studio 2010\Projects\Library\Library\obj\x86\Debug\Library.csproj.GenerateResource.Cache
 d:\documents\visual studio 2010\Projects\Library\Library\obj\x86\Debug\Library.exe
 d:\documents\visual studio 2010\Projects\Library\Library\obj\x86\Debug\Library.pdb
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.exe
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.pdb
+E:\dbproject\project\librarysystem\Library\Library\bin\Debug\Library.exe.config
+E:\dbproject\project\librarysystem\Library\Library\bin\Debug\Library.exe
+E:\dbproject\project\librarysystem\Library\Library\bin\Debug\Library.pdb
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.csprojResolveAssemblyReference.cache
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form1.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form10.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form11.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form2.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form3.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form4.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form5.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form6.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form7.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form8.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Form9.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.Properties.Resources.resources
+E:\dbproject\project\librarysystem\Library\Library\obj\x86\Debug\Library.csproj.GenerateResource.Cache
