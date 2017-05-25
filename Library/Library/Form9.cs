@@ -43,6 +43,9 @@ namespace Library
         {
             Application.Exit(); 
         }
-       
+
+        public string getRid() {
+            return rid;
+        }
     }
 }
