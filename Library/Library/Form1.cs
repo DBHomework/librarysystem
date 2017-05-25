@@ -25,6 +25,7 @@ namespace Library
          * 2.查询相关的数据库中的信息，看又没有相关的用户，没有给出提示 
          * 
          * 3. 否则跳转到相应的Form中
+         * 
          */
         private void button1_Click(object sender, EventArgs e)
         {
