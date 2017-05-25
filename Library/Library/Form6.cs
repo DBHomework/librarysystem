@@ -38,5 +38,22 @@ namespace Library
         {
             Form2.form.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string rrid = textBox1.Text.Trim();
+            string rname = textBox2.Text.Trim();
+            string rsex = textBox3.Text.Trim();
+            string rwdep = textBox6.Text.Trim();
+            string rtel = textBox5.Text.Trim();
+            string sql = "select * from readertable where rrid like '%" + rrid + "%' and rname like '%" + rname + "%' and rsex like '%" + rsex + "%' and rwdep like '%" + rwdep + "%' and rtel like '%" + rtel + "%'";
+
+            this.dataGridView1.DataSource = OprSql.Queue(sql, "readers").Tables["readers"];
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
