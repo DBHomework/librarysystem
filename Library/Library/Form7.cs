@@ -26,7 +26,7 @@ namespace Library
 
         }
 
-        private void textBox7_KeyPress_1(object sender, KeyPressEventArgs e)
+        private void textBox7_KeyPress_1(object sender, KeyPressEventArgs e)//输入的可解数量只能是数字
         {
             if (!(Char.IsNumber(e.KeyChar)) && e.KeyChar != (char)8)
                 e.Handled = true;             

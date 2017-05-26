@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.reader_datalist = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,17 +45,17 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reader_datalist)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // reader_datalist
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 93);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 216);
-            this.dataGridView1.TabIndex = 0;
+            this.reader_datalist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reader_datalist.Location = new System.Drawing.Point(35, 93);
+            this.reader_datalist.Name = "reader_datalist";
+            this.reader_datalist.RowTemplate.Height = 23;
+            this.reader_datalist.Size = new System.Drawing.Size(545, 216);
+            this.reader_datalist.TabIndex = 0;
             // 
             // button1
             // 
@@ -85,6 +85,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "删除";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -213,13 +214,13 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.reader_datalist);
             this.MaximizeBox = false;
             this.Name = "Form6";
             this.Text = "读者信息";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form6_FormClosed);
             this.Load += new System.EventHandler(this.Form6_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reader_datalist)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,7 +228,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView reader_datalist;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;

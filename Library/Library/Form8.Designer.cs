@@ -29,22 +29,22 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.alter_reader_rid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.laber_reader_psw = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.alter_reader_rname = new System.Windows.Forms.TextBox();
+            this.alter_reader_rsex = new System.Windows.Forms.TextBox();
+            this.alter_reader_rbcnum = new System.Windows.Forms.TextBox();
+            this.alter_reader_account = new System.Windows.Forms.TextBox();
+            this.alter_reader_psw = new System.Windows.Forms.TextBox();
+            this.alter_reader_rtel = new System.Windows.Forms.TextBox();
+            this.alter_reader_rwdep = new System.Windows.Forms.TextBox();
+            this.alter_reader_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,12 +56,12 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "借书证号：";
             // 
-            // textBox1
+            // alter_reader_rid
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 21);
-            this.textBox1.TabIndex = 14;
+            this.alter_reader_rid.Location = new System.Drawing.Point(141, 82);
+            this.alter_reader_rid.Name = "alter_reader_rid";
+            this.alter_reader_rid.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_rid.TabIndex = 14;
             // 
             // label2
             // 
@@ -97,16 +97,16 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 26;
-            this.label4.Text = "职称：";
+            this.label4.Text = "账户：";
             // 
-            // label5
+            // laber_reader_psw
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(293, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "联系电话：";
+            this.laber_reader_psw.AutoSize = true;
+            this.laber_reader_psw.Location = new System.Drawing.Point(317, 131);
+            this.laber_reader_psw.Name = "laber_reader_psw";
+            this.laber_reader_psw.Size = new System.Drawing.Size(41, 12);
+            this.laber_reader_psw.TabIndex = 27;
+            this.laber_reader_psw.Text = "密码：";
             // 
             // label6
             // 
@@ -115,7 +115,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 28;
-            this.label6.Text = "工作部门：";
+            this.label6.Text = "联系电话：";
             // 
             // label8
             // 
@@ -124,87 +124,88 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 12);
             this.label8.TabIndex = 29;
-            this.label8.Text = "已借数量：";
+            this.label8.Text = "工作部门：";
             // 
-            // textBox2
+            // alter_reader_rname
             // 
-            this.textBox2.Location = new System.Drawing.Point(141, 131);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 21);
-            this.textBox2.TabIndex = 30;
+            this.alter_reader_rname.Location = new System.Drawing.Point(141, 131);
+            this.alter_reader_rname.Name = "alter_reader_rname";
+            this.alter_reader_rname.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_rname.TabIndex = 30;
             // 
-            // textBox3
+            // alter_reader_rsex
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(124, 21);
-            this.textBox3.TabIndex = 31;
+            this.alter_reader_rsex.Location = new System.Drawing.Point(141, 178);
+            this.alter_reader_rsex.Name = "alter_reader_rsex";
+            this.alter_reader_rsex.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_rsex.TabIndex = 31;
             // 
-            // textBox4
+            // alter_reader_rbcnum
             // 
-            this.textBox4.Location = new System.Drawing.Point(141, 226);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(124, 21);
-            this.textBox4.TabIndex = 32;
+            this.alter_reader_rbcnum.Location = new System.Drawing.Point(141, 226);
+            this.alter_reader_rbcnum.Name = "alter_reader_rbcnum";
+            this.alter_reader_rbcnum.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_rbcnum.TabIndex = 32;
             // 
-            // textBox5
+            // alter_reader_account
             // 
-            this.textBox5.Location = new System.Drawing.Point(373, 82);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(124, 21);
-            this.textBox5.TabIndex = 33;
+            this.alter_reader_account.Location = new System.Drawing.Point(373, 82);
+            this.alter_reader_account.Name = "alter_reader_account";
+            this.alter_reader_account.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_account.TabIndex = 33;
             // 
-            // textBox6
+            // alter_reader_psw
             // 
-            this.textBox6.Location = new System.Drawing.Point(373, 131);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(124, 21);
-            this.textBox6.TabIndex = 34;
+            this.alter_reader_psw.Location = new System.Drawing.Point(373, 131);
+            this.alter_reader_psw.Name = "alter_reader_psw";
+            this.alter_reader_psw.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_psw.TabIndex = 34;
             // 
-            // textBox7
+            // alter_reader_rtel
             // 
-            this.textBox7.Location = new System.Drawing.Point(373, 178);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(124, 21);
-            this.textBox7.TabIndex = 35;
+            this.alter_reader_rtel.Location = new System.Drawing.Point(373, 178);
+            this.alter_reader_rtel.Name = "alter_reader_rtel";
+            this.alter_reader_rtel.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_rtel.TabIndex = 35;
             // 
-            // textBox8
+            // alter_reader_rwdep
             // 
-            this.textBox8.Location = new System.Drawing.Point(373, 226);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(124, 21);
-            this.textBox8.TabIndex = 36;
+            this.alter_reader_rwdep.Location = new System.Drawing.Point(373, 226);
+            this.alter_reader_rwdep.Name = "alter_reader_rwdep";
+            this.alter_reader_rwdep.Size = new System.Drawing.Size(124, 21);
+            this.alter_reader_rwdep.TabIndex = 36;
             // 
-            // button1
+            // alter_reader_btn
             // 
-            this.button1.Location = new System.Drawing.Point(251, 291);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "确定";
-            this.button1.UseVisualStyleBackColor = true;
+            this.alter_reader_btn.Location = new System.Drawing.Point(251, 291);
+            this.alter_reader_btn.Name = "alter_reader_btn";
+            this.alter_reader_btn.Size = new System.Drawing.Size(75, 23);
+            this.alter_reader_btn.TabIndex = 37;
+            this.alter_reader_btn.Text = "确定";
+            this.alter_reader_btn.UseVisualStyleBackColor = true;
+            this.alter_reader_btn.Click += new System.EventHandler(this.Alter_reader_btn);
             // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(574, 359);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.alter_reader_btn);
+            this.Controls.Add(this.alter_reader_rwdep);
+            this.Controls.Add(this.alter_reader_rtel);
+            this.Controls.Add(this.alter_reader_psw);
+            this.Controls.Add(this.alter_reader_account);
+            this.Controls.Add(this.alter_reader_rbcnum);
+            this.Controls.Add(this.alter_reader_rsex);
+            this.Controls.Add(this.alter_reader_rname);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.laber_reader_psw);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.alter_reader_rid);
             this.Controls.Add(this.label1);
             this.Name = "Form8";
             this.Text = "读者信息修改";
@@ -217,21 +218,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox alter_reader_rid;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label laber_reader_psw;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox alter_reader_rname;
+        private System.Windows.Forms.TextBox alter_reader_rsex;
+        private System.Windows.Forms.TextBox alter_reader_rbcnum;
+        private System.Windows.Forms.TextBox alter_reader_account;
+        private System.Windows.Forms.TextBox alter_reader_psw;
+        private System.Windows.Forms.TextBox alter_reader_rtel;
+        private System.Windows.Forms.TextBox alter_reader_rwdep;
+        private System.Windows.Forms.Button alter_reader_btn;
     }
 }
