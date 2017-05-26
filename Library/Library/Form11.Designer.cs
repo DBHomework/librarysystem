@@ -54,7 +54,7 @@
             this.bfdatalist.Location = new System.Drawing.Point(38, 93);
             this.bfdatalist.Name = "bfdatalist";
             this.bfdatalist.RowTemplate.Height = 23;
-            this.bfdatalist.Size = new System.Drawing.Size(608, 152);
+            this.bfdatalist.Size = new System.Drawing.Size(533, 156);
             this.bfdatalist.TabIndex = 1;
             // 
             // label2
@@ -73,12 +73,12 @@
             this.hisdatalist.Location = new System.Drawing.Point(38, 313);
             this.hisdatalist.Name = "hisdatalist";
             this.hisdatalist.RowTemplate.Height = 23;
-            this.hisdatalist.Size = new System.Drawing.Size(608, 152);
+            this.hisdatalist.Size = new System.Drawing.Size(684, 165);
             this.hisdatalist.TabIndex = 3;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(572, 54);
+            this.button4.Location = new System.Drawing.Point(510, 60);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 27);
             this.button4.TabIndex = 15;
@@ -90,7 +90,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 512);
+            this.ClientSize = new System.Drawing.Size(779, 526);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.hisdatalist);
             this.Controls.Add(this.label2);

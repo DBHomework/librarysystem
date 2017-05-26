@@ -92,13 +92,13 @@ go
 /* Table: borinfotable                                          */
 /*==============================================================*/
 create table borinfotable (
+   id                   int    identity(1,1)  primary key, --自动增长主键 
    rrrid                char(20)             not null,
    brid                 char(30)             not null,
    bdate                date             null,
    bterminaldate        date             null,
    returndate           date             null,
    fine                 float            null,
-   constraint PK_BORINFOTABLE primary key nonclustered (rrrid, brid), 
    constraint PK_BORINFO_TO_READER foreign key(rrrid) references readertable(rrid), 
    constraint PK_BORINFO_TO_BOOOK foreign key(brid) references booktable(bid), 
 )
@@ -149,35 +149,35 @@ values('bbb','123456',2,'1203')
 
 -- 书表
 insert into booktable
-values('9622150012','c语言','清华出版社','谭浩强',4,0,1)
+values('9622150012','c语言','清华出版社','谭浩强',4,2,1)
  
 insert into booktable
-values('9622150022','三个火枪手','朝阳社','大仲马',4,0,1)
+values('9622150022','三个火枪手','朝阳社','大仲马',4,2,1)
 
 insert into booktable
-values('9622150032','海底两万里','新华社','凡尔纳',4,0,1)
+values('9622150032','海底两万里','新华社','凡尔纳',4,2,1)
 
 insert into booktable
-values('9622150042','活着','厦大出版社','余华',4,0,1)
+values('9622150042','活着','厦大出版社','余华',4,2,1)
 
 insert into booktable
-values('9622150052','大学语文','厦大出版社','史言',2,0,1)
+values('9622150052','大学语文','厦大出版社','史言',2,1,1)
 
--- 借阅表
+-- 借阅表 主键自动增长
 
-insert into borinfotable 
+insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine) 
 values('1201','9622150012','2016-1-1','2016-2-1','2016-1-15',0)
 
-insert into borinfotable 
+insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine) 
 values('1202','9622150022','2016-2-1','2016-3-1',null,0)
 
-insert into borinfotable
+insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine) 
 values('1201','9622150032','2016-3-1','2016-4-1',null,0)
 
-insert into borinfotable
+insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine) 
 values('1201','9622150042','2016-4-1','2016-5-1',null,0)
 
-insert into borinfotable
+insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine) 
 values('1201','9622150052','2016-4-1','2016-5-1',null,0)
 
 
@@ -186,16 +186,31 @@ select * from booktable
 select * from readertable
 select * from borinfotable
 
+go
+create trigger T1
+on borinfotable
+for update
+as
+if update(returndate)
+begin
+
+update booktable set bhbnum=bhbnum-1
+from booktable,inserted i,deleted d
+where booktable.bid=d.brid
+
+update borinfotable set fine=datediff(day,d.bterminaldate,i.returndate)
+from borinfotable,inserted i,deleted d
+where borinfotable.brid=d.brid and borinfotable.returndate>d.bterminaldate
+
+end
+go
 
 
-
-
-
-
-
-
-
-
-
-
-
+create trigger T2
+on borinfotable
+for insert
+as
+update booktable set bhbnum=bhbnum+1
+from booktable,inserted i
+where booktable.bid=i.brid
+go
