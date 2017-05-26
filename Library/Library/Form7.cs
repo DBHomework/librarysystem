@@ -19,39 +19,6 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text))
-            {
-                MessageBox.Show("借书证号不能为空！");
-                return;
-            }
-
-            string rrid = textBox1.Text.Trim();
-            string rname = textBox2.Text.Trim();
-
-            //性别默认为m
-            string rsex = "m";
-            if (textBox3.Text.Trim() != "f" && textBox3.Text.Trim() != "m")
-                MessageBox.Show("无效性别，已设为默认值m");
-            else if (textBox3.Text.Trim() != "f")
-                rsex = "f";
-
-
-            int rbcnum = 16;
-            if (textBox7.Text.Trim() != "")
-                rbcnum = int.Parse(textBox7.Text);
-            int rbhnum = 0;
-            if (textBox8.Text.Trim() != "")
-                rbhnum = int.Parse(textBox8.Text);
-
-
-            string rwdep = textBox6.Text.Trim();
-            string rtel = textBox5.Text.Trim();
-            string sql = "insert into readertable" +
-                " values ('" + rrid + "', '" + rname + "', '" + rsex + "', "
-                + rbcnum + ", " + rbhnum + ", '" + rwdep + "', '" + rtel + "')";
-
-            OprSql.ExecuteSql(sql);
-            this.Close();
         }
         
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -62,51 +29,74 @@ namespace Library
         private void textBox7_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (!(Char.IsNumber(e.KeyChar)) && e.KeyChar != (char)8)
-                e.Handled = true;
-        }
-
-        private void textBox8_KeyPress_1(object sender, KeyPressEventArgs e)
-        {
-                if (!(Char.IsNumber(e.KeyChar)) && e.KeyChar != (char)8)
-                    e.Handled = true;
-            
+                e.Handled = true;             
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox1.Text))
+            if (string.IsNullOrEmpty(add_reader_rrid.Text))
             {
                 MessageBox.Show("借书证号不能为空！");
                 return;
             }
 
-            string rrid = textBox1.Text.Trim();
-            string rname = textBox2.Text.Trim();
+            if (string.IsNullOrEmpty(add_reader_account.Text) || string.IsNullOrEmpty(add_reader_psw.Text))
+            {
+                MessageBox.Show("账号密码不能为空！");
+                return;
+            }
+
+            string rrid = add_reader_rrid.Text.Trim();
+            string rname = add_reader_rname.Text.Trim();
+
 
             //性别默认为m
             string rsex = "m";
-            if (textBox3.Text.Trim() != "f" && textBox3.Text.Trim() != "m")
+            if (add_reader_rsex.Text.Trim() != "f" && add_reader_rsex.Text.Trim() != "m")
                 MessageBox.Show("无效性别，已设为默认值m");
-            else if (textBox3.Text.Trim() != "f")
+            else if (add_reader_rsex.Text.Trim() != "f")
                 rsex = "f";
 
 
             int rbcnum = 16;
-            if (textBox7.Text.Trim() != "")
-                rbcnum = int.Parse(textBox7.Text);
+            if (add_reader_rbcnum.Text.Trim() != "")
+                rbcnum = int.Parse(add_reader_rbcnum.Text);
             int rbhnum = 0;
-            if (textBox8.Text.Trim() != "")
-                rbhnum = int.Parse(textBox8.Text);
 
 
-            string rwdep = textBox6.Text.Trim();
-            string rtel = textBox5.Text.Trim();
-            string sql = "insert into readertable" +
+            string rwdep = add_reader_rdep.Text.Trim();
+            string rtel = add_reader_psw.Text.Trim();
+            string sql = "insert into readertable(rrid, rname, rsex, rbcnum, rbhnum, rwdep, rtel)" +
                 " values ('" + rrid + "', '" + rname + "', '" + rsex + "', "
                 + rbcnum + ", " + rbhnum + ", '" + rwdep + "', '" + rtel + "')";
 
+            //logintable
+            string account = add_reader_account.Text.Trim();
+            string psw = add_reader_psw.Text.Trim();
+            int authority = 2;
+            string rid = rrid;
+
+            string sql_login = "insert into logintable(account, psw, authority, rid) " + 
+                "values('" + account + "', '" + psw + "', " + authority + ", '" + rid + "')";
+
             OprSql.ExecuteSql(sql);
+            OprSql.ExecuteSql(sql_login);
             this.Close();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
