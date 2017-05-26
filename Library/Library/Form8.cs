@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,10 +45,16 @@ namespace Library
             string sql_alter_readertable = "update readertable" +
                                                 " set rname = '" + rname + "', rsex = " + "'" + rsex + "', rbcnum = " + rbcnum + ", rbhnum = " + rbhnum + ", rwdep = '" + rwdep + "', rtel = '" + rtel + "' where rrid = '" + rrid + "'";
             string sql_alter_logintable = "update logintable set account = '" + account + "', psw = '" + psw + "' where rid = '" + rrid + "'";
-
-            OprSql.ExecuteSql(sql_alter_readertable);
-            OprSql.ExecuteSql(sql_alter_logintable);
-
+            try
+            {
+                OprSql.ExecuteSql(sql_alter_readertable);
+                OprSql.ExecuteSql(sql_alter_logintable);
+            }
+            catch
+            {
+                MessageBox.Show("违反约束或与数据库连接失败，修改失败");
+                return;
+            }
             MessageBox.Show("修改成功");
             this.Close();
         }

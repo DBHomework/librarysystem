@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -78,9 +79,16 @@ namespace Library
 
             string sql_login = "insert into logintable(account, psw, authority, rid) " + 
                 "values('" + account + "', '" + psw + "', " + authority + ", '" + rid + "')";
-
-            OprSql.ExecuteSql(sql);
-            OprSql.ExecuteSql(sql_login);
+            try
+            {
+                OprSql.ExecuteSql(sql);
+                OprSql.ExecuteSql(sql_login);
+            }
+            catch
+            {
+                MessageBox.Show("添加了重复的借书证号或账户名，新增失败");
+                return;
+            }
             this.Close();
         }
 
