@@ -51,7 +51,39 @@ namespace Library
         {
 
         }
-        
-       
+
+        private void 添加用户_Click(object sender, EventArgs e)
+        {
+            Form7 subForm = new Form7();
+            subForm.Show();
+        }
+
+        private void 查找书籍_Click(object sender, EventArgs e)
+        {
+            Form6 subForm = new Form6();
+            subForm.Show();
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            Form6 subForm = new Form6();
+            subForm.Show();
+        }
+
+        private void toolStripButton8_Click(object sender, EventArgs e)
+        {
+            Form6 subForm = new Form6();
+            subForm.Show();
+        }
+
+        private void 图书管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 还书办理_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

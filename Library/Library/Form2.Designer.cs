@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查询图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,28 +55,6 @@
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(12, 338);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "图书信息";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(184, 338);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "读者信息";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
@@ -102,29 +78,30 @@
             this.图书管理ToolStripMenuItem.Name = "图书管理ToolStripMenuItem";
             this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
             this.图书管理ToolStripMenuItem.Text = "图书管理";
+            this.图书管理ToolStripMenuItem.Click += new System.EventHandler(this.图书管理ToolStripMenuItem_Click);
             // 
             // 查询图书ToolStripMenuItem
             // 
             this.查询图书ToolStripMenuItem.Name = "查询图书ToolStripMenuItem";
-            this.查询图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.查询图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.查询图书ToolStripMenuItem.Text = "查询图书";
             // 
             // 添加图书ToolStripMenuItem
             // 
             this.添加图书ToolStripMenuItem.Name = "添加图书ToolStripMenuItem";
-            this.添加图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.添加图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.添加图书ToolStripMenuItem.Text = "添加图书";
             // 
             // 修改图书ToolStripMenuItem
             // 
             this.修改图书ToolStripMenuItem.Name = "修改图书ToolStripMenuItem";
-            this.修改图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.修改图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.修改图书ToolStripMenuItem.Text = "修改图书";
             // 
             // 删除图书ToolStripMenuItem
             // 
             this.删除图书ToolStripMenuItem.Name = "删除图书ToolStripMenuItem";
-            this.删除图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.删除图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.删除图书ToolStripMenuItem.Text = "删除图书";
             // 
             // 读者管理ToolStripMenuItem
@@ -141,25 +118,25 @@
             // 添加读者ToolStripMenuItem
             // 
             this.添加读者ToolStripMenuItem.Name = "添加读者ToolStripMenuItem";
-            this.添加读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.添加读者ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.添加读者ToolStripMenuItem.Text = "添加读者";
             // 
             // 查询读者ToolStripMenuItem
             // 
             this.查询读者ToolStripMenuItem.Name = "查询读者ToolStripMenuItem";
-            this.查询读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.查询读者ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.查询读者ToolStripMenuItem.Text = "查询读者";
             // 
             // 修改信息ToolStripMenuItem
             // 
             this.修改信息ToolStripMenuItem.Name = "修改信息ToolStripMenuItem";
-            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.修改信息ToolStripMenuItem.Text = "修改信息";
             // 
             // 删除读者ToolStripMenuItem
             // 
             this.删除读者ToolStripMenuItem.Name = "删除读者ToolStripMenuItem";
-            this.删除读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.删除读者ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.删除读者ToolStripMenuItem.Text = "删除读者";
             // 
             // toolStrip1
@@ -194,6 +171,7 @@
             this.添加用户.Name = "添加用户";
             this.添加用户.Size = new System.Drawing.Size(49, 44);
             this.添加用户.Text = "添加用户";
+            this.添加用户.Click += new System.EventHandler(this.添加用户_Click);
             // 
             // 查找书籍
             // 
@@ -204,6 +182,7 @@
             this.查找书籍.Name = "查找书籍";
             this.查找书籍.Size = new System.Drawing.Size(49, 44);
             this.查找书籍.Text = "查找书籍";
+            this.查找书籍.Click += new System.EventHandler(this.查找书籍_Click);
             // 
             // toolStripButton7
             // 
@@ -214,6 +193,7 @@
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.Size = new System.Drawing.Size(49, 44);
             this.toolStripButton7.Text = "用户信息修改";
+            this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
             // toolStripButton8
             // 
@@ -223,7 +203,8 @@
             this.toolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.Size = new System.Drawing.Size(49, 44);
-            this.toolStripButton8.Text = "修改密码";
+            this.toolStripButton8.Text = "删除读者";
+            this.toolStripButton8.Click += new System.EventHandler(this.toolStripButton8_Click);
             // 
             // toolStripSeparator1
             // 
@@ -270,6 +251,7 @@
             this.还书办理.Name = "还书办理";
             this.还书办理.Size = new System.Drawing.Size(49, 44);
             this.还书办理.Text = "还书办理";
+            this.还书办理.Click += new System.EventHandler(this.还书办理_Click);
             // 
             // toolStripSeparator3
             // 
@@ -284,8 +266,6 @@
             this.BackgroundImage = global::Library.Properties.Resources._14403fbc832b714af48f63cc7f53ab64;
             this.ClientSize = new System.Drawing.Size(626, 471);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -302,9 +282,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 图书管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 查询图书ToolStripMenuItem;
