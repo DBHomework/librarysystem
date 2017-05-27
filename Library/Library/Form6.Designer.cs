@@ -43,21 +43,25 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.reader_borinfo = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.reader_datalist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reader_borinfo)).BeginInit();
             this.SuspendLayout();
             // 
             // reader_datalist
             // 
             this.reader_datalist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.reader_datalist.Location = new System.Drawing.Point(35, 93);
+            this.reader_datalist.Location = new System.Drawing.Point(35, 129);
             this.reader_datalist.Name = "reader_datalist";
             this.reader_datalist.RowTemplate.Height = 23;
-            this.reader_datalist.Size = new System.Drawing.Size(545, 216);
+            this.reader_datalist.Size = new System.Drawing.Size(545, 141);
             this.reader_datalist.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 333);
+            this.button1.Location = new System.Drawing.Point(35, 496);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(61, 27);
             this.button1.TabIndex = 2;
@@ -67,7 +71,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(265, 333);
+            this.button3.Location = new System.Drawing.Point(276, 496);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 27);
             this.button3.TabIndex = 4;
@@ -77,7 +81,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(519, 333);
+            this.button2.Location = new System.Drawing.Point(519, 496);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(61, 27);
             this.button2.TabIndex = 5;
@@ -175,11 +179,42 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // reader_borinfo
+            // 
+            this.reader_borinfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reader_borinfo.Location = new System.Drawing.Point(35, 317);
+            this.reader_borinfo.Name = "reader_borinfo";
+            this.reader_borinfo.RowTemplate.Height = 23;
+            this.reader_borinfo.Size = new System.Drawing.Size(545, 141);
+            this.reader_borinfo.TabIndex = 19;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "读者信息";
+            // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.Location = new System.Drawing.Point(33, 291);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(77, 12);
+            this.Label7.TabIndex = 21;
+            this.Label7.Text = "读者借阅信息";
+            this.Label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(629, 372);
+            this.ClientSize = new System.Drawing.Size(629, 557);
+            this.Controls.Add(this.Label7);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.reader_borinfo);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -201,6 +236,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form6_FormClosed);
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.reader_datalist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reader_borinfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +259,8 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView reader_borinfo;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Label7;
     }
 }
