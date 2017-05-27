@@ -47,5 +47,14 @@ namespace Library
         public string getRid() {
             return rid;
         }
+
+        private void Form9_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("确定退出？", "提示", MessageBoxButtons.YesNo)
+                   == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace Library
             InitializeComponent();
         }
         static string ID;
-        static string connectionString = System.Configuration.ConfigurationManager.AppSettings["connectionString"];
+        static string connectionString = System.Configuration.ConfigurationSettings.AppSettings["connectionString"];
         public static DataSet Query(String sql)
         {
             SqlConnection con = new SqlConnection(connectionString);

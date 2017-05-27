@@ -37,6 +37,20 @@ namespace Library
         {
             Application.Exit();
         }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("确定退出？", "提示", MessageBoxButtons.YesNo)
+                    == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
         
        
     }
