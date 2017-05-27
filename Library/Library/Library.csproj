@@ -155,6 +155,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config">
       <SubType>Designer</SubType>
@@ -168,6 +169,36 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\367c707002518bbb34031ce79e66574e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ea7d25b9c3b808829130798e3de9c57c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\511efb4a9727402dd3453e71d45965b2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d7d28acf5badebe89e6943ab37f03162.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_group_256px_1186690_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_modify_48px_556807_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_edit_modify_write_48px_1631_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\address_book_delete_32px_7306_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e44168dda1a04bf0c327903fc81bad93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14403fbc832b714af48f63cc7f53ab64.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
