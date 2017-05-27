@@ -47,9 +47,9 @@
             this.toolStripButton8 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.添加书籍 = new System.Windows.Forms.ToolStripButton();
-            this.查询借书记录 = new System.Windows.Forms.ToolStripButton();
-            this.借书办理 = new System.Windows.Forms.ToolStripButton();
-            this.还书办理 = new System.Windows.Forms.ToolStripButton();
+            this.查询图书信息 = new System.Windows.Forms.ToolStripButton();
+            this.修改图书信息 = new System.Windows.Forms.ToolStripButton();
+            this.删除图书信息 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -83,25 +83,25 @@
             // 查询图书ToolStripMenuItem
             // 
             this.查询图书ToolStripMenuItem.Name = "查询图书ToolStripMenuItem";
-            this.查询图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.查询图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.查询图书ToolStripMenuItem.Text = "查询图书";
             // 
             // 添加图书ToolStripMenuItem
             // 
             this.添加图书ToolStripMenuItem.Name = "添加图书ToolStripMenuItem";
-            this.添加图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.添加图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.添加图书ToolStripMenuItem.Text = "添加图书";
             // 
             // 修改图书ToolStripMenuItem
             // 
             this.修改图书ToolStripMenuItem.Name = "修改图书ToolStripMenuItem";
-            this.修改图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.修改图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.修改图书ToolStripMenuItem.Text = "修改图书";
             // 
             // 删除图书ToolStripMenuItem
             // 
             this.删除图书ToolStripMenuItem.Name = "删除图书ToolStripMenuItem";
-            this.删除图书ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.删除图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.删除图书ToolStripMenuItem.Text = "删除图书";
             // 
             // 读者管理ToolStripMenuItem
@@ -118,25 +118,25 @@
             // 添加读者ToolStripMenuItem
             // 
             this.添加读者ToolStripMenuItem.Name = "添加读者ToolStripMenuItem";
-            this.添加读者ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.添加读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.添加读者ToolStripMenuItem.Text = "添加读者";
             // 
             // 查询读者ToolStripMenuItem
             // 
             this.查询读者ToolStripMenuItem.Name = "查询读者ToolStripMenuItem";
-            this.查询读者ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.查询读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.查询读者ToolStripMenuItem.Text = "查询读者";
             // 
             // 修改信息ToolStripMenuItem
             // 
             this.修改信息ToolStripMenuItem.Name = "修改信息ToolStripMenuItem";
-            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.修改信息ToolStripMenuItem.Text = "修改信息";
             // 
             // 删除读者ToolStripMenuItem
             // 
             this.删除读者ToolStripMenuItem.Name = "删除读者ToolStripMenuItem";
-            this.删除读者ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.删除读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.删除读者ToolStripMenuItem.Text = "删除读者";
             // 
             // toolStrip1
@@ -152,9 +152,9 @@
             this.toolStripButton8,
             this.toolStripSeparator1,
             this.添加书籍,
-            this.查询借书记录,
-            this.借书办理,
-            this.还书办理,
+            this.查询图书信息,
+            this.修改图书信息,
+            this.删除图书信息,
             this.toolStripSeparator3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 26);
             this.toolStrip1.Name = "toolStrip1";
@@ -181,7 +181,7 @@
             this.查找书籍.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.查找书籍.Name = "查找书籍";
             this.查找书籍.Size = new System.Drawing.Size(49, 44);
-            this.查找书籍.Text = "查找书籍";
+            this.查找书籍.Text = "查找读者";
             this.查找书籍.Click += new System.EventHandler(this.查找书籍_Click);
             // 
             // toolStripButton7
@@ -221,37 +221,40 @@
             this.添加书籍.Name = "添加书籍";
             this.添加书籍.Size = new System.Drawing.Size(49, 44);
             this.添加书籍.Text = "添加书籍";
+            this.添加书籍.Click += new System.EventHandler(this.添加书籍_Click);
             // 
-            // 查询借书记录
+            // 查询图书信息
             // 
-            this.查询借书记录.AutoSize = false;
-            this.查询借书记录.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.查询借书记录.Image = ((System.Drawing.Image)(resources.GetObject("查询借书记录.Image")));
-            this.查询借书记录.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.查询借书记录.Name = "查询借书记录";
-            this.查询借书记录.Size = new System.Drawing.Size(49, 44);
-            this.查询借书记录.Text = "查询借书记录";
+            this.查询图书信息.AutoSize = false;
+            this.查询图书信息.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.查询图书信息.Image = ((System.Drawing.Image)(resources.GetObject("查询图书信息.Image")));
+            this.查询图书信息.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.查询图书信息.Name = "查询图书信息";
+            this.查询图书信息.Size = new System.Drawing.Size(49, 44);
+            this.查询图书信息.Text = "查询图书信息";
+            this.查询图书信息.Click += new System.EventHandler(this.查询图书信息_Click);
             // 
-            // 借书办理
+            // 修改图书信息
             // 
-            this.借书办理.AutoSize = false;
-            this.借书办理.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.借书办理.Image = global::Library.Properties.Resources.document_edit_modify_write_48px_1631_easyicon_net;
-            this.借书办理.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.借书办理.Name = "借书办理";
-            this.借书办理.Size = new System.Drawing.Size(49, 44);
-            this.借书办理.Text = "借书办理";
+            this.修改图书信息.AutoSize = false;
+            this.修改图书信息.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.修改图书信息.Image = global::Library.Properties.Resources.document_edit_modify_write_48px_1631_easyicon_net;
+            this.修改图书信息.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.修改图书信息.Name = "修改图书信息";
+            this.修改图书信息.Size = new System.Drawing.Size(49, 44);
+            this.修改图书信息.Text = "修改图书信息";
+            this.修改图书信息.Click += new System.EventHandler(this.修改图书信息_Click);
             // 
-            // 还书办理
+            // 删除图书信息
             // 
-            this.还书办理.AutoSize = false;
-            this.还书办理.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.还书办理.Image = global::Library.Properties.Resources.address_book_delete_32px_7306_easyicon_net;
-            this.还书办理.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.还书办理.Name = "还书办理";
-            this.还书办理.Size = new System.Drawing.Size(49, 44);
-            this.还书办理.Text = "还书办理";
-            this.还书办理.Click += new System.EventHandler(this.还书办理_Click);
+            this.删除图书信息.AutoSize = false;
+            this.删除图书信息.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.删除图书信息.Image = global::Library.Properties.Resources.address_book_delete_32px_7306_easyicon_net;
+            this.删除图书信息.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.删除图书信息.Name = "删除图书信息";
+            this.删除图书信息.Size = new System.Drawing.Size(49, 44);
+            this.删除图书信息.Text = "删除图书信息";
+            this.删除图书信息.Click += new System.EventHandler(this.还书办理_Click);
             // 
             // toolStripSeparator3
             // 
@@ -300,9 +303,9 @@
         private System.Windows.Forms.ToolStripButton toolStripButton8;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton 添加书籍;
-        private System.Windows.Forms.ToolStripButton 查询借书记录;
-        private System.Windows.Forms.ToolStripButton 借书办理;
-        private System.Windows.Forms.ToolStripButton 还书办理;
+        private System.Windows.Forms.ToolStripButton 查询图书信息;
+        private System.Windows.Forms.ToolStripButton 修改图书信息;
+        private System.Windows.Forms.ToolStripButton 删除图书信息;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }

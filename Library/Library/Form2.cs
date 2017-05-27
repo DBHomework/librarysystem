@@ -83,7 +83,30 @@ namespace Library
 
         private void 还书办理_Click(object sender, EventArgs e)
         {
+            Form3 subForm = new Form3();
+            subForm.Owner = this;
+            subForm.Show();
+        }
 
+        private void 添加书籍_Click(object sender, EventArgs e)
+        {
+            Form4 subForm = new Form4();
+            subForm.Owner = this;
+            subForm.Show();
+        }
+
+        private void 查询图书信息_Click(object sender, EventArgs e)
+        {
+            Form3 subForm = new Form3();
+            subForm.Owner = this;
+            subForm.Show();
+        }
+
+        private void 修改图书信息_Click(object sender, EventArgs e)
+        {
+            Form3 subForm = new Form3();
+            subForm.Owner = this;
+            subForm.Show();
         }
     }
 }
