@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
             this.label1 = new System.Windows.Forms.Label();
             this.alter_reader_rid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -207,6 +208,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.alter_reader_rid);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form8";
             this.Text = "读者信息修改";
             this.Load += new System.EventHandler(this.Form8_Load);

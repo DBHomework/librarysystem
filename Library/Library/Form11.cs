@@ -27,7 +27,7 @@ namespace Library
         {
         }
 
-        private void button4_Click(object sender, EventArgs e)
+       /* private void button4_Click(object sender, EventArgs e)
         {   
             // 还书 
             if (bfdatalist.CurrentRow == null)
@@ -48,11 +48,11 @@ namespace Library
             {
                 MessageBox.Show("还书失败！");
             }
-        }
+        }*/
 
         public  void reflash()
         {
-            string sql = "select bf.id 借阅单号,bf.brid 书号 , bname 书名,bdate 借书日期,bterminaldate 应归还日期 from borinfotable bf,booktable bt where bf.returndate is null and bf.brid = bt.bid and rrrid='" + Form9.form.getRid() + "'";
+            string sql = "select bf.id 借阅单号,bf.brid 书号 , bname 书名,bdate 借书日期,bterminaldate 应归还日期,returndate 归还日期,fine 罚款 from borinfotable bf,booktable bt where bf.returndate is null and bf.brid = bt.bid and rrrid='" + Form9.form.getRid() + "'";
             DataTable dt1 = OprSql.Queue(sql, "borinfo").Tables["borinfo"];
             if(dt1.Rows.Count != 0)
             {

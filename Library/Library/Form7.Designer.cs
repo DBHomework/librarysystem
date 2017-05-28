@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.label1 = new System.Windows.Forms.Label();
             this.add_reader_rrid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -211,6 +212,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.add_reader_rrid);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form7";
             this.Text = "读者信息添加";
             this.ResumeLayout(false);

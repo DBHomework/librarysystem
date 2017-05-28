@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.bid1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -194,6 +195,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bid1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form5";
             this.Text = "修改图书信息";
             this.Load += new System.EventHandler(this.Form5_Load);

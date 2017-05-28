@@ -37,17 +37,18 @@
             this.bname = new System.Windows.Forms.TextBox();
             this.author = new System.Windows.Forms.TextBox();
             this.bpress = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.datalist = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datalist)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(80, 24);
+            this.label1.Location = new System.Drawing.Point(37, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 6;
@@ -56,8 +57,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(80, 70);
+            this.label2.Location = new System.Drawing.Point(37, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 7;
@@ -66,8 +68,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(275, 24);
+            this.label3.Location = new System.Drawing.Point(232, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 16);
             this.label3.TabIndex = 8;
@@ -76,8 +79,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(259, 70);
+            this.label4.Location = new System.Drawing.Point(216, 66);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 16);
             this.label4.TabIndex = 9;
@@ -85,68 +89,69 @@
             // 
             // bid
             // 
-            this.bid.Location = new System.Drawing.Point(131, 25);
+            this.bid.Location = new System.Drawing.Point(88, 25);
             this.bid.Name = "bid";
             this.bid.Size = new System.Drawing.Size(119, 21);
             this.bid.TabIndex = 10;
             // 
             // bname
             // 
-            this.bname.Location = new System.Drawing.Point(131, 71);
+            this.bname.Location = new System.Drawing.Point(88, 61);
             this.bname.Name = "bname";
             this.bname.Size = new System.Drawing.Size(119, 21);
             this.bname.TabIndex = 11;
             // 
             // author
             // 
-            this.author.Location = new System.Drawing.Point(324, 24);
+            this.author.Location = new System.Drawing.Point(281, 24);
             this.author.Name = "author";
             this.author.Size = new System.Drawing.Size(119, 21);
             this.author.TabIndex = 12;
             // 
             // bpress
             // 
-            this.bpress.Location = new System.Drawing.Point(324, 71);
+            this.bpress.Location = new System.Drawing.Point(281, 61);
             this.bpress.Name = "bpress";
             this.bpress.Size = new System.Drawing.Size(119, 21);
             this.bpress.TabIndex = 13;
             // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(449, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 49);
-            this.button4.TabIndex = 14;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // datalist
             // 
             this.datalist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datalist.Location = new System.Drawing.Point(40, 128);
+            this.datalist.Location = new System.Drawing.Point(28, 103);
             this.datalist.Name = "datalist";
             this.datalist.RowTemplate.Height = 23;
-            this.datalist.Size = new System.Drawing.Size(598, 249);
+            this.datalist.Size = new System.Drawing.Size(598, 279);
             this.datalist.TabIndex = 15;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(541, 61);
+            this.button1.Location = new System.Drawing.Point(452, 61);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 61);
+            this.button1.Size = new System.Drawing.Size(66, 21);
             this.button1.TabIndex = 16;
             this.button1.Text = "借阅";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button4
+            // 
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.Location = new System.Drawing.Point(452, 26);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(66, 20);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "查询";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library.Properties.Resources._511efb4a9727402dd3453e71d45965b2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(671, 428);
+            this.ClientSize = new System.Drawing.Size(661, 444);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.datalist);
             this.Controls.Add(this.button4);
@@ -160,7 +165,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form10";
-            this.Text = "图书信息查询";
+            this.Text = "图书信息查询和借阅";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form10_FormClosed);
             this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datalist)).EndInit();

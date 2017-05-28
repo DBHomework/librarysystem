@@ -63,6 +63,16 @@ namespace Library.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _11 {
+            get {
+                object obj = ResourceManager.GetObject("11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap _14403fbc832b714af48f63cc7f53ab64 {
             get {
                 object obj = ResourceManager.GetObject("14403fbc832b714af48f63cc7f53ab64", resourceCulture);
@@ -93,9 +103,29 @@ namespace Library.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _95bOOOPIC76 {
+            get {
+                object obj = ResourceManager.GetObject("95bOOOPIC76", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap address_book_delete_32px_7306_easyicon_net {
             get {
                 object obj = ResourceManager.GetObject("address_book_delete_32px_7306_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap books_1325_6658031088px_1202889_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("books_1325.6658031088px_1202889_easyicon.net", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +176,66 @@ namespace Library.Properties {
         internal static System.Drawing.Bitmap ea7d25b9c3b808829130798e3de9c57c {
             get {
                 object obj = ResourceManager.GetObject("ea7d25b9c3b808829130798e3de9c57c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Folder_Library_512px_1131431_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("Folder_Library_512px_1131431_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap k144al3x5gs {
+            get {
+                object obj = ResourceManager.GetObject("k144al3x5gs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap libq {
+            get {
+                object obj = ResourceManager.GetObject("libq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Library_Folder_black_128px_1062803_easyicon_net {
+            get {
+                object obj = ResourceManager.GetObject("Library_Folder_black_128px_1062803_easyicon.net", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap reading_books_1_ {
+            get {
+                object obj = ResourceManager.GetObject("reading books(1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

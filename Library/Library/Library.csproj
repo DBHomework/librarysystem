@@ -64,6 +64,12 @@
     <Compile Include="Form11.Designer.cs">
       <DependentUpon>Form11.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form11.resx">
       <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -199,6 +208,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\14403fbc832b714af48f63cc7f53ab64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books_1325.6658031088px_1202889_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Library_Folder_black_128px_1062803_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_Library_512px_1131431_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading books%281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k144al3x5gs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\95bOOOPIC76.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
