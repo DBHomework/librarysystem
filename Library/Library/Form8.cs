@@ -56,6 +56,7 @@ namespace Library
                 return;
             }
             MessageBox.Show("修改成功");
+            Form6.form.reflash();
             this.Close();
         }
     }
