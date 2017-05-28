@@ -131,7 +131,7 @@ namespace Library
             string sql_delete_readertable = "delete readertable where rrid = '" + rrid + "'";
 
             //查看待删除读者是否有借阅记录，有就无法删除
-            string sql_test = "select * from borinfotable where rrrid = '" + rrid + "' and returndate is not NULL";
+            string sql_test = "select * from borinfotable where rrrid = '" + rrid + "' and returndate is NULL";
             int test_rows = OprSql.Queue(sql_test, "test_delete").Tables["test_delete"].Rows.Count;
             if (test_rows > 0)
             {
