@@ -167,6 +167,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library.Properties.Resources._11;
             this.ClientSize = new System.Drawing.Size(664, 367);
             this.Controls.Add(this.bpress1);
             this.Controls.Add(this.author1);
