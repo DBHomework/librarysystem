@@ -25,9 +25,33 @@ namespace Library
             string bnum = bnum1.Text.Trim();
             string bhbnum = bhbnum1.Text.Trim();
             string bborrow = bhbnum1.Text.Trim();
-            string sql = "insert into booktable values('" + bid + "','" + bname + "','" + bpress + "','" + author + "','" + bnum + "','" + bhbnum + "','" + bborrow + "')";
-            Form3.ExecuteSql(sql);
-            this.Close();
+            if (bid == "" || bname == ""||author == ""||bpress == ""||bnum == ""||bhbnum == ""||bborrow =="")
+            {
+                MessageBox.Show("图书信息必须齐全！");
+                return;
+            }
+            string sqlSearch = "select * from booktable where bid='" + bid +
+               "'";
+            DataTable dt = OprSql.Queue(sqlSearch, "logintable").Tables["logintable"];
+            if (dt.Rows.Count == 1)
+            {
+                MessageBox.Show("图书信息输入错误！");
+                bid1.Text = "";
+                bname1.Text = "";
+                bpress1.Text = "";
+                author1.Text = "";
+                bnum1.Text = "";
+                bhbnum1.Text = "";
+                bborrow1.Text = "";
+                return;
+
+            }
+            else
+            {
+                string sql = "insert into booktable values('" + bid + "','" + bname + "','" + bpress + "','" + author + "','" + bnum + "','" + bhbnum + "','" + bborrow + "')";
+                Form3.ExecuteSql(sql);
+                this.Close();
+            }
 
         }
     }

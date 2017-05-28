@@ -69,15 +69,7 @@ namespace Library
             string bname = bname1.Text.Trim();
             string author = author1.Text.Trim();
             string bpress = bpress1.Text.Trim();
-            this.datalist.DataSource = Query("select bid 书号, bname 书名 ,bpress 出版社, author 作者,bnum 馆藏,bhbnum 可借,bborrow 是否可借 from booktable where bid like '%" + bid + "%'and bname like '%" + bname + "%'and author like '%" + author + "%'and bpress like '%" + bpress + "%'").Tables["booktable"];
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form4 subForm = new Form4();
-            subForm.Owner = this;
-            subForm.Show();
+            this.datalist.DataSource = Query("select bid 书号, bname 书名 ,bpress 出版社, author 作者,bnum 馆藏,bhbnum 可借,bborrow 是否可借 from booktable where bnum != 0 and bid like '%" + bid + "%'and bname like '%" + bname + "%'and author like '%" + author + "%'and bpress like '%" + bpress + "%'").Tables["booktable"];
 
         }
 
@@ -104,19 +96,31 @@ namespace Library
 
         private void datalist_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ID = datalist.Rows[e.RowIndex].Cells["sid"].Value.ToString().Trim();
+            //ID = datalist.Rows[e.RowIndex].Cells["sid"].Value.ToString().Trim();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (datalist.CurrentRow == null)
+            {
+                MessageBox.Show("您选择的图书为空！");
+                return;
+            }
+
             int a = datalist.CurrentRow.Index; //获取当前选中行
             string bid = datalist.Rows[a].Cells[0].Value.ToString().Trim();//获取该行第0列数据
-            string sql = "delete from booktable where bid='" + bid + "'";
+            string sql = "update booktable set bnum = 0 where bid='" + bid + "'";
 
             if (ExecuteSql(sql) > 0)
             {
                 MessageBox.Show("删除成功！");
             }
+            button4_Click(this, e);
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }
