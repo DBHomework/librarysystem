@@ -39,11 +39,11 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.查询图书信息 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.还书 = new System.Windows.Forms.ToolStripButton();
+            this.借书 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.借阅历史 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.借书 = new System.Windows.Forms.ToolStripButton();
+            this.还书 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             this.我的图书ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(687, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(673, 25);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,7 +95,7 @@
             // 
             this.借阅历史ToolStripMenuItem.Name = "借阅历史ToolStripMenuItem";
             this.借阅历史ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.借阅历史ToolStripMenuItem.Text = "借阅历史";
+            this.借阅历史ToolStripMenuItem.Text = "借阅信息";
             this.借阅历史ToolStripMenuItem.Click += new System.EventHandler(this.借阅历史ToolStripMenuItem_Click);
             // 
             // 归还图书ToolStripMenuItem
@@ -121,7 +121,7 @@
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 25);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(687, 49);
+            this.toolStrip1.Size = new System.Drawing.Size(673, 49);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -142,16 +142,16 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(7, 45);
             // 
-            // 还书
+            // 借书
             // 
-            this.还书.AutoSize = false;
-            this.还书.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.还书.Image = global::Library.Properties.Resources.images;
-            this.还书.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.还书.Name = "还书";
-            this.还书.Size = new System.Drawing.Size(49, 44);
-            this.还书.Text = "书籍";
-            this.还书.Click += new System.EventHandler(this.toolStripButton7_Click);
+            this.借书.AutoSize = false;
+            this.借书.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.借书.Image = global::Library.Properties.Resources.Library_Folder_black_128px_1062803_easyicon_net;
+            this.借书.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.借书.Name = "借书";
+            this.借书.Size = new System.Drawing.Size(49, 44);
+            this.借书.Text = "借书";
+            this.借书.Click += new System.EventHandler(this.添加书籍_Click);
             // 
             // toolStripSeparator1
             // 
@@ -176,23 +176,23 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(7, 45);
             // 
-            // 借书
+            // 还书
             // 
-            this.借书.AutoSize = false;
-            this.借书.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.借书.Image = global::Library.Properties.Resources.Library_Folder_black_128px_1062803_easyicon_net;
-            this.借书.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.借书.Name = "借书";
-            this.借书.Size = new System.Drawing.Size(49, 44);
-            this.借书.Text = "借书";
-            this.借书.Click += new System.EventHandler(this.添加书籍_Click);
+            this.还书.AutoSize = false;
+            this.还书.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.还书.Image = global::Library.Properties.Resources.images;
+            this.还书.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.还书.Name = "还书";
+            this.还书.Size = new System.Drawing.Size(49, 44);
+            this.还书.Text = "书籍";
+            this.还书.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Library.Properties.Resources.reading_books_1_;
-            this.ClientSize = new System.Drawing.Size(687, 503);
+            this.ClientSize = new System.Drawing.Size(673, 503);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
