@@ -51,7 +51,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 69);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(29, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 7;
@@ -59,7 +60,7 @@
             // 
             // add_reader_rrid
             // 
-            this.add_reader_rrid.Location = new System.Drawing.Point(123, 66);
+            this.add_reader_rrid.Location = new System.Drawing.Point(100, 25);
             this.add_reader_rrid.Name = "add_reader_rrid";
             this.add_reader_rrid.Size = new System.Drawing.Size(124, 21);
             this.add_reader_rrid.TabIndex = 13;
@@ -67,7 +68,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(76, 123);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(53, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 12);
             this.label2.TabIndex = 14;
@@ -76,7 +78,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(76, 177);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(53, 136);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 15;
@@ -85,7 +88,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(292, 69);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(275, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 16;
@@ -94,7 +98,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(268, 177);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(251, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 12);
             this.label5.TabIndex = 17;
@@ -103,7 +108,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(268, 229);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(251, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 12);
             this.label6.TabIndex = 18;
@@ -111,21 +117,21 @@
             // 
             // add_reader_rname
             // 
-            this.add_reader_rname.Location = new System.Drawing.Point(123, 120);
+            this.add_reader_rname.Location = new System.Drawing.Point(100, 79);
             this.add_reader_rname.Name = "add_reader_rname";
             this.add_reader_rname.Size = new System.Drawing.Size(124, 21);
             this.add_reader_rname.TabIndex = 19;
             // 
             // add_reader_rsex
             // 
-            this.add_reader_rsex.Location = new System.Drawing.Point(123, 174);
+            this.add_reader_rsex.Location = new System.Drawing.Point(100, 133);
             this.add_reader_rsex.Name = "add_reader_rsex";
             this.add_reader_rsex.Size = new System.Drawing.Size(124, 21);
             this.add_reader_rsex.TabIndex = 20;
             // 
             // add_reader_account
             // 
-            this.add_reader_account.Location = new System.Drawing.Point(339, 66);
+            this.add_reader_account.Location = new System.Drawing.Point(322, 25);
             this.add_reader_account.Name = "add_reader_account";
             this.add_reader_account.Size = new System.Drawing.Size(124, 21);
             this.add_reader_account.TabIndex = 21;
@@ -133,14 +139,14 @@
             // 
             // add_reader_psw
             // 
-            this.add_reader_psw.Location = new System.Drawing.Point(339, 120);
+            this.add_reader_psw.Location = new System.Drawing.Point(322, 79);
             this.add_reader_psw.Name = "add_reader_psw";
             this.add_reader_psw.Size = new System.Drawing.Size(124, 21);
             this.add_reader_psw.TabIndex = 22;
             // 
             // add_reader_rdep
             // 
-            this.add_reader_rdep.Location = new System.Drawing.Point(339, 226);
+            this.add_reader_rdep.Location = new System.Drawing.Point(322, 185);
             this.add_reader_rdep.Name = "add_reader_rdep";
             this.add_reader_rdep.Size = new System.Drawing.Size(124, 21);
             this.add_reader_rdep.TabIndex = 23;
@@ -148,7 +154,8 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(52, 229);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Location = new System.Drawing.Point(29, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 12);
             this.label7.TabIndex = 24;
@@ -156,7 +163,7 @@
             // 
             // add_reader_rbcnum
             // 
-            this.add_reader_rbcnum.Location = new System.Drawing.Point(123, 226);
+            this.add_reader_rbcnum.Location = new System.Drawing.Point(100, 185);
             this.add_reader_rbcnum.Name = "add_reader_rbcnum";
             this.add_reader_rbcnum.Size = new System.Drawing.Size(124, 21);
             this.add_reader_rbcnum.TabIndex = 26;
@@ -164,7 +171,7 @@
             // 
             // add_reader_rtel
             // 
-            this.add_reader_rtel.Location = new System.Drawing.Point(339, 174);
+            this.add_reader_rtel.Location = new System.Drawing.Point(322, 133);
             this.add_reader_rtel.Name = "add_reader_rtel";
             this.add_reader_rtel.Size = new System.Drawing.Size(124, 21);
             this.add_reader_rtel.TabIndex = 27;
@@ -172,7 +179,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(240, 285);
+            this.button1.Location = new System.Drawing.Point(214, 242);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 28;
@@ -183,7 +190,8 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(292, 123);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Location = new System.Drawing.Point(275, 82);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(41, 12);
             this.label8.TabIndex = 25;
@@ -194,7 +202,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 327);
+            this.BackgroundImage = global::Library.Properties.Resources.form7;
+            this.ClientSize = new System.Drawing.Size(507, 287);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.add_reader_rtel);
             this.Controls.Add(this.add_reader_rbcnum);

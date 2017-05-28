@@ -29,17 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.图书管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.查询图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.添加图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除图书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.读者管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.添加读者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.查询读者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.删除读者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.添加用户 = new System.Windows.Forms.ToolStripButton();
             this.查找书籍 = new System.Windows.Forms.ToolStripButton();
@@ -51,93 +40,8 @@
             this.修改图书信息 = new System.Windows.Forms.ToolStripButton();
             this.删除图书信息 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.图书管理ToolStripMenuItem,
-            this.读者管理ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(626, 26);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // 图书管理ToolStripMenuItem
-            // 
-            this.图书管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.查询图书ToolStripMenuItem,
-            this.添加图书ToolStripMenuItem,
-            this.修改图书ToolStripMenuItem,
-            this.删除图书ToolStripMenuItem});
-            this.图书管理ToolStripMenuItem.Name = "图书管理ToolStripMenuItem";
-            this.图书管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.图书管理ToolStripMenuItem.Text = "图书管理";
-            this.图书管理ToolStripMenuItem.Click += new System.EventHandler(this.图书管理ToolStripMenuItem_Click);
-            // 
-            // 查询图书ToolStripMenuItem
-            // 
-            this.查询图书ToolStripMenuItem.Name = "查询图书ToolStripMenuItem";
-            this.查询图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.查询图书ToolStripMenuItem.Text = "查询图书";
-            // 
-            // 添加图书ToolStripMenuItem
-            // 
-            this.添加图书ToolStripMenuItem.Name = "添加图书ToolStripMenuItem";
-            this.添加图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.添加图书ToolStripMenuItem.Text = "添加图书";
-            // 
-            // 修改图书ToolStripMenuItem
-            // 
-            this.修改图书ToolStripMenuItem.Name = "修改图书ToolStripMenuItem";
-            this.修改图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.修改图书ToolStripMenuItem.Text = "修改图书";
-            // 
-            // 删除图书ToolStripMenuItem
-            // 
-            this.删除图书ToolStripMenuItem.Name = "删除图书ToolStripMenuItem";
-            this.删除图书ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.删除图书ToolStripMenuItem.Text = "删除图书";
-            // 
-            // 读者管理ToolStripMenuItem
-            // 
-            this.读者管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.添加读者ToolStripMenuItem,
-            this.查询读者ToolStripMenuItem,
-            this.修改信息ToolStripMenuItem,
-            this.删除读者ToolStripMenuItem});
-            this.读者管理ToolStripMenuItem.Name = "读者管理ToolStripMenuItem";
-            this.读者管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 22);
-            this.读者管理ToolStripMenuItem.Text = "读者管理";
-            // 
-            // 添加读者ToolStripMenuItem
-            // 
-            this.添加读者ToolStripMenuItem.Name = "添加读者ToolStripMenuItem";
-            this.添加读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.添加读者ToolStripMenuItem.Text = "添加读者";
-            // 
-            // 查询读者ToolStripMenuItem
-            // 
-            this.查询读者ToolStripMenuItem.Name = "查询读者ToolStripMenuItem";
-            this.查询读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.查询读者ToolStripMenuItem.Text = "查询读者";
-            // 
-            // 修改信息ToolStripMenuItem
-            // 
-            this.修改信息ToolStripMenuItem.Name = "修改信息ToolStripMenuItem";
-            this.修改信息ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.修改信息ToolStripMenuItem.Text = "修改信息";
-            // 
-            // 删除读者ToolStripMenuItem
-            // 
-            this.删除读者ToolStripMenuItem.Name = "删除读者ToolStripMenuItem";
-            this.删除读者ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.删除读者ToolStripMenuItem.Text = "删除读者";
             // 
             // toolStrip1
             // 
@@ -156,7 +60,7 @@
             this.修改图书信息,
             this.删除图书信息,
             this.toolStripSeparator3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 26);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(626, 61);
             this.toolStrip1.TabIndex = 3;
@@ -269,15 +173,11 @@
             this.BackgroundImage = global::Library.Properties.Resources._14403fbc832b714af48f63cc7f53ab64;
             this.ClientSize = new System.Drawing.Size(626, 471);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "管理员身份";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -285,17 +185,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 图书管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 查询图书ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 添加图书ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 修改图书ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 删除图书ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 读者管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 添加读者ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 查询读者ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 修改信息ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 删除读者ToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton 添加用户;
         private System.Windows.Forms.ToolStripButton 查找书籍;
