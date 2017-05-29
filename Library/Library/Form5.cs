@@ -40,6 +40,7 @@ namespace Library
             string bborrow = bhbnum1.Text.Trim();
             string sql = "update booktable set bname='" + bname + "',author='" + author + "',bpress='" + bpress + "',bnum='" + bnum + "',bhbnum='" + bhbnum + "',bborrow='" +bborrow + "'where bid='" + bid + "'";
             Form3.ExecuteSql(sql);
+            Form3.form.reflash(); 
             this.Close();
 
         }

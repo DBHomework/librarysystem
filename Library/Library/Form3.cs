@@ -14,9 +14,21 @@ namespace Library
 {
     public partial class Form3 : Form
     {
+        public static Form3 form; 
         public Form3()
         {
+            form = this;
             InitializeComponent();
+        }
+
+        public void reflash()
+        {
+            string bid = bid1.Text.Trim();
+            string bname = bname1.Text.Trim();
+            string author = author1.Text.Trim();
+            string bpress = bpress1.Text.Trim();
+            this.datalist.DataSource = Query("select bid 书号, bname 书名 ,bpress 出版社, author 作者,bnum 馆藏,bhbnum 可借,bborrow 是否可借 from booktable where bnum != 0 and bid like '%" + bid + "%'and bname like '%" + bname + "%'and author like '%" + author + "%'and bpress like '%" + bpress + "%'").Tables["booktable"];
+
         }
         static string ID;
         static string connectionString = System.Configuration.ConfigurationSettings.AppSettings["connectionString"];
