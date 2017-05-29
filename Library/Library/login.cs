@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Library
 {
-    public partial class Form1 : Form
+    public partial class login : Form
     {
-        public Form1()
+        public login()
         {
             InitializeComponent();
         }
@@ -52,14 +52,14 @@ namespace Library
                 DataRow dr = dt.Rows[0];
                 if (int.Parse(dr["authority"].ToString()) == 1)
                 { //如果是1进入管理员 2进入读者
-                    Form2 subForm = new Form2();
+                    Administrator subForm = new Administrator();
                     this.Hide();
                     subForm.Show();
                     
                 }
                 else
                 {
-                    Form9 readerForm = new Form9(dr["rid"].ToString().Trim());
+                    Reader readerForm = new Reader(dr["rid"].ToString().Trim());
                     this.Hide();
                     readerForm.Show();
                 }

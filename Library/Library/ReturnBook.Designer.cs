@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    partial class Form12
+    partial class ReturnBook
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form12));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReturnBook));
             this.rb_bt = new System.Windows.Forms.Button();
             this.rbdatalist = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();

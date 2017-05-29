@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form9 : Form
+    public partial class Reader : Form
     {
         private string rid;
-        public static Form9 form = null;
-        public Form9(string ridString)
+        public static Reader form = null;
+        public Reader(string ridString)
         {
             rid = ridString;
             form = this;//用于返回
@@ -59,50 +59,50 @@ namespace Library
 
         private void 查询图书信息_Click(object sender, EventArgs e)
         {// 查书
-            Form10 subForm = new Form10();
+            BookQueryAndBor subForm = new BookQueryAndBor();
             subForm.Show();
         }
 
         private void 添加书籍_Click(object sender, EventArgs e)
         {
             // 借书  
-            Form10 subForm = new Form10();
+            BookQueryAndBor subForm = new BookQueryAndBor();
             subForm.Show();
         }
 
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
             // 借阅历史
-            Form11 subForm = new Form11(rid);
+            BorrowHistory subForm = new BorrowHistory(rid);
             subForm.Show();
         }
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {   // 还书 
-            Form12 subForm = new Form12();
+            ReturnBook subForm = new ReturnBook();
             subForm.Show();
         }
 
         private void 查书ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form10 subForm = new Form10();
+            BookQueryAndBor subForm = new BookQueryAndBor();
             subForm.Show();
         }
         private void 借书ToolStripMenuItem_Click(object sender, EventArgs e)
         {   //借书  
-            Form10 subForm = new Form10();
+            BookQueryAndBor subForm = new BookQueryAndBor();
             subForm.Show();
         }
 
         private void 借阅历史ToolStripMenuItem_Click(object sender, EventArgs e)
         {   //借阅历史
-            Form11 subForm = new Form11(rid);
+            BorrowHistory subForm = new BorrowHistory(rid);
             subForm.Show();
         }
 
         private void 归还图书ToolStripMenuItem_Click(object sender, EventArgs e)
         {   //还书 
-            Form12 subForm = new Form12();
+            ReturnBook subForm = new ReturnBook();
             subForm.Show();
         }
      

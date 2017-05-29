@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form12 : Form
+    public partial class ReturnBook : Form
     {
-        public Form12()
+        public ReturnBook()
         {
             InitializeComponent();
             reflash(); 
@@ -24,7 +24,7 @@ namespace Library
 
         public void reflash()
         {
-            string sql = "select  bf.id 借阅单号,bf.brid 书号 , bname 书名,bdate 借书日期,bterminaldate 应归还日期,returndate 归还日期,fine 罚款 from borinfotable bf,booktable bt where bf.returndate is null and bf.brid = bt.bid and rrrid='" + Form9.form.getRid() + "'";
+            string sql = "select  bf.id 借阅单号,bf.brid 书号 , bname 书名,bdate 借书日期,bterminaldate 应归还日期,returndate 归还日期,fine 罚款 from borinfotable bf,booktable bt where bf.returndate is null and bf.brid = bt.bid and rrrid='" + Reader.form.getRid() + "'";
             DataTable dt1 = OprSql.Queue(sql, "borinfo").Tables["borinfo"];
             if (dt1.Rows.Count != 0)
             {

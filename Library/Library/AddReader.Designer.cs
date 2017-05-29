@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    partial class Form7
+    partial class AddReader
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddReader));
             this.label1 = new System.Windows.Forms.Label();
             this.add_reader_rrid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();

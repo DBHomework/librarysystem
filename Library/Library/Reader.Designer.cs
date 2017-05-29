@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    partial class Form9
+    partial class Reader
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reader));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.图书信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查书ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

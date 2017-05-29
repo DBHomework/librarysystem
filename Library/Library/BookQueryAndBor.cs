@@ -8,10 +8,10 @@ using System.Text;
 using System.Windows.Forms;
 namespace Library
 {
-    public partial class Form10 : Form
+    public partial class BookQueryAndBor : Form
     {
         private string searchsql = null;
-        public Form10()
+        public BookQueryAndBor()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Library
         }
         private void Form10_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form9.form.Show();
+            Reader.form.Show();
         }
         // 查询按钮
         private void button4_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace Library
             //先判断借书是否到上限
             //判断是否有罚款 否提示交罚款 有借阅成功
 
-            string readersql = "select * from readertable where rrid = '"+Form9.form.getRid()+"'";
+            string readersql = "select * from readertable where rrid = '"+Reader.form.getRid()+"'";
             DataTable dreader = OprSql.Queue(readersql, "readertable").Tables["readertable"];
 
             if (int.Parse(dreader.Rows[0]["rbcnum"].ToString()) -
@@ -57,7 +57,7 @@ namespace Library
             
             // 是否有罚款
             string sql = "select * from borinfotable where fine != 0 and rrrid='" +
-                Form9.form.getRid() + "'";
+                Reader.form.getRid() + "'";
             DataTable dt = OprSql.Queue(sql, "bortable").Tables["bortable"];
             if (dt.Rows.Count != 0) {
                 MessageBox.Show("有罚款不能借阅");
@@ -65,7 +65,7 @@ namespace Library
                     == DialogResult.Yes)
                 {
                     // 提交罚款后，将所有的罚款进行更新为0
-                    string updateFine = "update  borinfotable set fine=0 where fine != 0 and rrrid='" + Form9.form.getRid() + "'";
+                    string updateFine = "update  borinfotable set fine=0 where fine != 0 and rrrid='" + Reader.form.getRid() + "'";
                     if (OprSql.ExecuteSql(updateFine) > 0)
                     {
                         MessageBox.Show("交款成功!");
@@ -93,7 +93,7 @@ namespace Library
                 string nowString = DateTime.Parse(DateTime.Now.ToShortDateString()).ToString("yyyy-MM-dd");
                 string terminalString = DateTime.Parse(DateTime.Now.AddDays(60).ToShortDateString()).ToString("yyyy-MM-dd");
                 // 更改表，使得同一个人可以借多本书 
-                string borsql = "insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine)  values('" + Form9.form.getRid() + "','" + bookid + "','" + nowString + "','" +
+                string borsql = "insert into borinfotable(rrrid,brid,bdate,bterminaldate,returndate,fine)  values('" + Reader.form.getRid() + "','" + bookid + "','" + nowString + "','" +
                     terminalString+"',"+"null"+","+0+")";
                 
                 // 判断是否还有书本可借
@@ -105,7 +105,7 @@ namespace Library
                 try
                 {
                     // 已经借阅，不可重复借阅
-                    string hasborrow = "select * from borinfotable where rrrid='" + Form9.form.getRid() + "' and brid='" +
+                    string hasborrow = "select * from borinfotable where rrrid='" + Reader.form.getRid() + "' and brid='" +
                         bookid + "' and returndate is null";
                     if (OprSql.Queue(hasborrow, "hasbortable").Tables["hasbortable"].Rows.Count != 0)
                     {

@@ -12,10 +12,10 @@ using System.Collections;
 
 namespace Library
 {
-    public partial class Form3 : Form
+    public partial class BooksManagement : Form
     {
-        public static Form3 form; 
-        public Form3()
+        public static BooksManagement form; 
+        public BooksManagement()
         {
             form = this;
             InitializeComponent();
@@ -95,7 +95,7 @@ namespace Library
             string bnum = datalist.Rows[a].Cells[4].Value.ToString().Trim();
             string bhbnum = datalist.Rows[a].Cells[5].Value.ToString().Trim();
             string bborrow = datalist.Rows[a].Cells[6].Value.ToString().Trim();
-            Form5 subForm = new Form5(bid, bname, bpress, author,bnum,bhbnum,bborrow);
+            ModifyBookinfo subForm = new ModifyBookinfo(bid, bname, bpress, author,bnum,bhbnum,bborrow);
             subForm.Owner = this;
             subForm.Show();
 
@@ -103,7 +103,7 @@ namespace Library
 
         private void Form3_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form2.form.Show();
+            Administrator.form.Show();
         }
 
         private void datalist_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form7 : Form
+    public partial class AddReader : Form
     {
-        public Form7()
+        public AddReader()
         {
             InitializeComponent();
         }

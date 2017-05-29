@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    partial class Form11
+    partial class BorrowHistory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form11));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BorrowHistory));
             this.label1 = new System.Windows.Forms.Label();
             this.bfdatalist = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form8 : Form
+    public partial class ModifyReader : Form
     {
         private int rbhnum_p;
-        public Form8(string rrid, string rname, string rsex, string rbcnum, string rbhnum, string rwdep, string rtel, string account, string psw)
+        public ModifyReader(string rrid, string rname, string rsex, string rbcnum, string rbhnum, string rwdep, string rtel, string account, string psw)
         {
             InitializeComponent();
             alter_reader_rid.Text = rrid;
@@ -56,7 +56,7 @@ namespace Library
                 return;
             }
             MessageBox.Show("修改成功");
-            Form6.form.reflash();
+            ReaderManagement.form.reflash();
             this.Close();
         }
     }

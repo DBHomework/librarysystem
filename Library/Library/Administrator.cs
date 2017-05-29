@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form2 : Form
+    public partial class Administrator : Form
     {
-        public static Form2 form = null;
-        public Form2()
+        public static Administrator form = null;
+        public Administrator()
         {
             form = this;
             InitializeComponent();
@@ -21,14 +21,14 @@ namespace Library
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 subForm = new Form3();
+            BooksManagement subForm = new BooksManagement();
             subForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form6 subForm = new Form6();
+            ReaderManagement subForm = new ReaderManagement();
             subForm.Show();
 
         }
@@ -54,25 +54,25 @@ namespace Library
 
         private void 添加用户_Click(object sender, EventArgs e)
         {
-            Form7 subForm = new Form7();
+            AddReader subForm = new AddReader();
             subForm.Show();
         }
 
         private void 查找书籍_Click(object sender, EventArgs e)
         {
-            Form6 subForm = new Form6();
+            ReaderManagement subForm = new ReaderManagement();
             subForm.Show();
         }
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-            Form6 subForm = new Form6();
+            ReaderManagement subForm = new ReaderManagement();
             subForm.Show();
         }
 
         private void toolStripButton8_Click(object sender, EventArgs e)
         {
-            Form6 subForm = new Form6();
+            ReaderManagement subForm = new ReaderManagement();
             subForm.Show();
         }
 
@@ -83,28 +83,28 @@ namespace Library
 
         private void 还书办理_Click(object sender, EventArgs e)
         {
-            Form3 subForm = new Form3();
+            BooksManagement subForm = new BooksManagement();
             subForm.Owner = this;
             subForm.Show();
         }
 
         private void 添加书籍_Click(object sender, EventArgs e)
         {
-            Form4 subForm = new Form4();
+            AddBook subForm = new AddBook();
             subForm.Owner = this;
             subForm.Show();
         }
 
         private void 查询图书信息_Click(object sender, EventArgs e)
         {
-            Form3 subForm = new Form3();
+            BooksManagement subForm = new BooksManagement();
             subForm.Owner = this;
             subForm.Show();
         }
 
         private void 修改图书信息_Click(object sender, EventArgs e)
         {
-            Form3 subForm = new Form3();
+            BooksManagement subForm = new BooksManagement();
             subForm.Owner = this;
             subForm.Show();
         }

@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form6 : Form
+    public partial class ReaderManagement : Form
     {
-        public static Form6 form = null;
+        public static ReaderManagement form = null;
         private string sql = null;
         private string sql_borinfo = null;
-        public Form6()
+        public ReaderManagement()
         {
             form = this;
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace Library
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form7 subForm = new Form7();
+            AddReader subForm = new AddReader();
             subForm.Show();
 
         }
@@ -57,7 +57,7 @@ namespace Library
 
                 string psw = OprSql.Queue(sql_fetch_account_psw, "account and psw").Tables["account and psw"].Rows[0][1].ToString();
 
-                Form8 subForm = new Form8(rrid, rname, rsex, rbcnum, rbhnum, rwdep, rtel, account, psw);
+                ModifyReader subForm = new ModifyReader(rrid, rname, rsex, rbcnum, rbhnum, rwdep, rtel, account, psw);
                 subForm.Owner = this;
                 subForm.Show();
             }
@@ -72,7 +72,7 @@ namespace Library
 
         private void Form6_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form2.form.Show();
+            Administrator.form.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace Library
             sql = "select rrid 借书证号, rname 姓名, rsex 性别, rbcnum 可借数量, rbhnum 已借数量, rwdep 工作部门, rtel 联系电话 from readertable where rrid like '%" + rrid + "%' and (rname like '%" + rname + "%'or rname is NULL) and (rsex like '%" + rsex + "%' or rsex is NULL) and (rwdep like '%" + rwdep + "%' or rwdep is NULL) and (rtel like '%" + rtel + "%' or rtel is NULL)";
 
             sql_borinfo = "select borinfotable.id 借阅记录号, rrrid 借书证号, rname 姓名, brid 书号, bname 书名 from readertable, booktable, borinfotable " +
-                "where rrid like '%" + rrid + "%' and rrid = rrrid and bid = brid";
+                "where rrid like '%" + rrid + "%' and rrid = rrrid and bid = brid and rname like '%" + rname + "'";
 
             this.reader_datalist.DataSource = OprSql.Queue(sql, "readers").Tables["readers"];
             this.reader_borinfo.DataSource = OprSql.Queue(sql_borinfo, "borinfo").Tables["borinfo"];

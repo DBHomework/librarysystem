@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form4 : Form
+    public partial class AddBook : Form
     {
-        public Form4()
+        public AddBook()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace Library
             else
             {
                 string sql = "insert into booktable values('" + bid + "','" + bname + "','" + bpress + "','" + author + "','" + bnum + "','" + bhbnum + "','" + bborrow + "')";
-                Form3.ExecuteSql(sql);
+                BooksManagement.ExecuteSql(sql);
                 this.Close();
             }
 

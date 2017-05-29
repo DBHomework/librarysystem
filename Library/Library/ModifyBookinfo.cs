@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form5 : Form
+    public partial class ModifyBookinfo : Form
     {
-         public Form5(string bid, string bname, string bpress, string author,string bnum,string bhbnum,string bborrow)
+         public ModifyBookinfo(string bid, string bname, string bpress, string author,string bnum,string bhbnum,string bborrow)
         {
             InitializeComponent();
             bid1.Text = bid;
@@ -39,8 +39,8 @@ namespace Library
             string bhbnum = bhbnum1.Text.Trim();
             string bborrow = bhbnum1.Text.Trim();
             string sql = "update booktable set bname='" + bname + "',author='" + author + "',bpress='" + bpress + "',bnum='" + bnum + "',bhbnum='" + bhbnum + "',bborrow='" +bborrow + "'where bid='" + bid + "'";
-            Form3.ExecuteSql(sql);
-            Form3.form.reflash(); 
+            BooksManagement.ExecuteSql(sql);
+            BooksManagement.form.reflash(); 
             this.Close();
 
         }

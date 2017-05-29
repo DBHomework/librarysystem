@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    partial class Form2
+    partial class Administrator
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrator));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.添加用户 = new System.Windows.Forms.ToolStripButton();
             this.查找书籍 = new System.Windows.Forms.ToolStripButton();
